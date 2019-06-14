@@ -32,7 +32,13 @@ Edit this document to include your answers after each question. Make sure to lea
 
 2. What is the difference between a function and a method?
 
-3. What is closure?
+3. What is closure? 
+
+using something that is outside of the scope you're currently in
+so inside of a function using a global variable
+would technically be closure
+or a function inside a function because technically theres multiple scopes
+
 
 4. Describe the four rules of the 'this' keyword.
 
