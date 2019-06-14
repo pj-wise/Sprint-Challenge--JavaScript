@@ -28,21 +28,35 @@ Demonstrate your understanding of this week's concepts by answering the followin
 
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager
 
-1. Describe the biggest difference between `.forEach` & `.map`.
+1. Describe the biggest difference between `.forEach` & `.map`. 
+
+<!-- .map returns a new array forEach uses your current one -->
 
 2. What is the difference between a function and a method?
 
+<!-- methods are functions used within an object functions are used on their own. 
+(methods can use properties within their given object) -->
+
 3. What is closure? 
 
-using something that is outside of the scope you're currently in
-so inside of a function using a global variable
-would technically be closure
-or a function inside a function because technically theres multiple scopes
+<!-- Using something that is outside of the scope you're currently in.
+(inside of a function using a global variable
+or a function inside a function because technically theres multiple scopes) -->
 
 
 4. Describe the four rules of the 'this' keyword.
 
+ <!-- global binding: sets the value of the 'this' keyword to the window/console object. (not recommended to use. also: const and let arent stored at global level but var is).
+
+- implicit binding: very commonly used binding. 'this' keyword points to the object on which the function is called. Applies when calling a method to an object. (what is left of the '.' ex: this.value)
+
+- new bindings: creates a new object and 'this' points to the new object. ex: let myFunction = new Function('this is the new function').
+
+- explicit binding: binding of 'this' occurs when .call(), .apply(), or .bind() are used on a function. ex: .apply(yourObject, thingsYouEnjoy)  -->
+
 5. Why do we need super() in an extended class?
+
+<!-- It is used to access/inherit the methods of a parent object -->
 
 ## Project Set up
 
