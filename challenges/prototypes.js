@@ -26,8 +26,28 @@
   Add properties and values of length: 4, width: 5, and height: 5 to cuboid.   
 */
 
+function CuboidMaker(data){
+  this.length = data.length;
+  this.width = data.width;
+  this.height = data.height;
+};
+CuboidMaker.prototype.volume = function(){
+  return (this.length * this.width * this.height);
+};
+CuboidMaker.prototype.surfaceArea = function(){
+  return (2 * (this.length * this.width + this.length * this.height + this.width *this.height));
+}
+
+
+const cuboid = new CuboidMaker({
+  length: 4,
+  width: 5,
+  height: 5
+});
+
+
 // Test your volume and surfaceArea methods by uncommenting the logs below:
-// console.log(cuboid.volume()); // 100
-// console.log(cuboid.surfaceArea()); // 130
+console.log(cuboid.volume()); // 100
+console.log(cuboid.surfaceArea()); // 130
 
 
